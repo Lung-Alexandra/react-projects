@@ -21,7 +21,7 @@
 
 .headerText {
     padding: 0.5rem 1rem 0 1rem;
-    color: #ddd6cb;
+    color: var(--txt-color1);
     max-width: 40rem;
     animation: fade-slide-in-from-right 1s ease-out forwards;
 }
@@ -36,12 +36,12 @@
 
 .creator {
     font-size: 1.5rem;
-    color: #cfa69b;
+    color: var(--a-txt-col);
     font-style: italic;
 }
 
 .creator a {
-    background: linear-gradient(90deg, #f9572a, #ff8a05);
+    background: linear-gradient(90deg, var(--h1-txt-color1),var(--h1-txt-color2));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,11 +49,11 @@
 
 .creator a:hover,
 .creator a:active {
-    background: linear-gradient(90deg, #f9572a, #ff8a05);
+    background: linear-gradient(90deg,  var(--a-active-color1),var(--a-active-color2));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+    text-shadow: 0 0 18px var(--txt-shadow-link);
 }
 
 .summary {
@@ -61,10 +61,11 @@
 }
 
 .instructions {
+    width: 90%;
     font-size: 1.25rem;
     line-height: 1.5;
-    background-color: #6e6464;
-    color: #13120f;
+    background-color: var(--instr-bg-color);
+    color: var(--instr-txt-color);
     border-radius: 8px;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
     padding: 2rem;
@@ -76,9 +77,9 @@
 .loading {
     font-size: 3rem;
     text-align: center;
-    color: #ddd6cb;
+    color: var(--txt-color1);
     font-weight: bold;
-    animation: flash 1s ease-in-out infinite alternate;
+    animation: 1s ease-in-out infinite alternate;
 }
 
 @keyframes fade-slide-in-from-left {
@@ -114,14 +115,3 @@
     }
 }
 
-@keyframes flash {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}

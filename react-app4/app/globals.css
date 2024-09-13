@@ -1,43 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+:root{
+
+    --txt-color1: rgb(207, 218, 215);
+
+    --h1-txt-color1: #cd7488;
+    --h1-txt-color2: #ea755a;
+
+    --a-active-color1: #d35e78;
+    --a-active-color2: #e3613f;
+    --a-hover-color: #de4e4e;
+    --a-txt-col: #f4f5f9;
+
+    --txt-shadow-link: rgba(239, 111, 94, 0.8);
+
+    --meal-bg1: #585858;
+    --meal-bg2: #322d2c;
+
+    --section-color: #dadbdf;
+
+    --bg-color1: #2c2c2c;
+    --bg-color2: #2a2a2e;
+
+    --form-focus: #828282;
+    --form-bg: #404040;
+    --form-border: #4b4b4b;
+
+    --instr-txt-color: #dadbdf;
+    --instr-bg-color: #393939;
+
+    --img-pic-bg: #d38f71;
+    --img-pic-border: rgba(176, 175, 174, 0.76);
+    --img-pic-txt: #f4f5f9;
+    --img-pic-bg-hov: #eb7c58;
+}
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: 'Quicksand', sans-serif;
+    font-family: "Playpen Sans", cursive;
 }
 
 body {
-  margin: 0;
-  background: radial-gradient(#282c34, #282c34);
+    margin: 0;
+    background: radial-gradient(var(--bg-color1), var(--bg-color2));
 }
 
 
 .not-found,
 .error {
-  margin-top: 5rem;
-  text-align: center;
+    margin-top: 5rem;
+    text-align: center;
 }
 
 .not-found h1,
 .error h1 {
-  font-size: 5rem;
-  margin: 0px;
-  font-weight: 900;
-  color: #262626;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #f9572a, #ffc905);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: cover;
-  background-position: center;
-  font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    margin: 0px;
+    font-weight: 900;
+    color: #262626;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background: linear-gradient(90deg, var(--h1-txt-color1), var(--h1-txt-color2)) center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .not-found p,
 .error p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #ddd8d8;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--txt-color1);
 }
