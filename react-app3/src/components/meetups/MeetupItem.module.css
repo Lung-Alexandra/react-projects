@@ -5,6 +5,9 @@
 }
 .item {
     margin: 1rem 0;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image {
@@ -13,11 +16,17 @@
     overflow: hidden;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    display: block;
+    object-fit: contain;
 }
 
 .content {
