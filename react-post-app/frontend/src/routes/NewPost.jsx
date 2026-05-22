@@ -1,6 +1,7 @@
 import classes from './NewPost.module.css';
 import Modal from "../components/Modal.jsx";
 import {Form, Link, redirect} from "react-router-dom";
+import { buildApiUrl } from "../lib/api.js";
 
 function NewPost() {
 
@@ -30,7 +31,7 @@ export default NewPost;
 export async function action({request}) {
     const formData = await request.formData();
     const postData= Object.fromEntries(formData);
-    await fetch('http://localhost:8080/posts', {
+    await fetch(buildApiUrl('/posts'), {
         method: "POST",
         body: JSON.stringify(postData),
         headers: {
